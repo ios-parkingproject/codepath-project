@@ -63,7 +63,7 @@ List all your screens from above. Under each screen, list the screens you can na
 
 
 ### Wireframes
-// TODO: Add Wireframe Images
+https://github.com/ios-parkingproject/codepath-project/blob/master/Edited.png
 
 ---
 
