@@ -69,3 +69,5 @@ https://github.com/ios-parkingproject/codepath-project/blob/master/Edited.png
 
 ### App Pitch Presentation
 // TODO: Add link to Pitch Presentation Deck
+
+<img src="https://github.com/ios-parkingproject/codepath-project/blob/master/parking%20app.gif" width=250><br>
