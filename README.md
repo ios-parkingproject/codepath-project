@@ -1,4 +1,7 @@
 UCI-parking
+### Team members
+Yangyu Shu
+Huanjia Liang
 
 ### App Description
 Allows UCI students to have a better parking experience by keep tracking of available parking spaces. 
