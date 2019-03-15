@@ -86,7 +86,7 @@ posts       Array of PFObject       An array that stores all those parking spots
 # Networking
 - Heroku API
   - SignIn Code:
-  '''swift
+  ```swift
         @IBAction func onSignIn(_ sender: Any) {
           let username = usernameField.text!
           let password = passwordField.text!
@@ -100,7 +100,7 @@ posts       Array of PFObject       An array that stores all those parking spots
               }
           }
       }
-  '''
+  ```
   - SignUp Code:
   '''swift
       @IBAction func onSignUP(_ sender: Any) {
