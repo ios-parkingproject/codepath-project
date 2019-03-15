@@ -1,6 +1,6 @@
 # Application Name
 
-ParkingApp
+ParkUCI
 
 # Team members
 
