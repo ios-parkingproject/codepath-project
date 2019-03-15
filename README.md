@@ -86,6 +86,7 @@ posts       Array of PFObject       An array that stores all those parking spots
 # Networking
 - Heroku API
   - SignIn Code:
+  '''swift
         @IBAction func onSignIn(_ sender: Any) {
           let username = usernameField.text!
           let password = passwordField.text!
@@ -99,8 +100,9 @@ posts       Array of PFObject       An array that stores all those parking spots
               }
           }
       }
-      
+  '''
   - SignUp Code:
+  '''swift
       @IBAction func onSignUP(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text
@@ -114,8 +116,10 @@ posts       Array of PFObject       An array that stores all those parking spots
             }
         }
     }
+ '''
     
  - Get parking spot information code:
+ '''swift
      override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query=PFQuery(className: "parkingSpot")
@@ -130,7 +134,9 @@ posts       Array of PFObject       An array that stores all those parking spots
             }
         }
     }
+  '''
   - Set Release and update parking spot information to database:
+  '''swift
        @IBAction func onRelease(_ sender: Any) {
         if(reserverd){
             selectedPost["availability"]=true
@@ -144,7 +150,9 @@ posts       Array of PFObject       An array that stores all those parking spots
         }
         
     }
+ '''
  - Set Reserve and update parking spot information to database:
+ '''swift
     @IBAction func onReserve(_ sender: Any) {
         if(!reserverd){
             selectedPost["availability"]=false
@@ -158,6 +166,20 @@ posts       Array of PFObject       An array that stores all those parking spots
             
         }
     }
-   
+   '''
    
    # GIF Walkthrough
+   ### Sign Up
+   <img src="https://github.com/ios-parkingproject/codepath-project/blob/master/Sign%20Up.gif" width=250><br>
+   
+   ### Sign In
+   <img src="https://github.com/ios-parkingproject/codepath-project/blob/master/Sign%20In.gif" width=250><br>
+   
+   ### Reserve Spot
+   <img src="https://github.com/ios-parkingproject/codepath-project/blob/master/Reserve.gif" width=250><br>
+   
+   ### Release Spot
+   <img src="https://github.com/ios-parkingproject/codepath-project/blob/master/Release.gif" width=250><br>
+   
+   ### Check Spot Status as Another Client
+   <img src="https://github.com/ios-parkingproject/codepath-project/blob/master/Check_as_ano_client.gif" width=250><br>
