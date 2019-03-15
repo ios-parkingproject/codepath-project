@@ -102,7 +102,7 @@ posts       Array of PFObject       An array that stores all those parking spots
       }
   ```
   - SignUp Code:
-  '''swift
+  ```swift
       @IBAction func onSignUP(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text
@@ -116,10 +116,10 @@ posts       Array of PFObject       An array that stores all those parking spots
             }
         }
     }
- '''
+ ```
     
  - Get parking spot information code:
- '''swift
+ ```swift
      override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query=PFQuery(className: "parkingSpot")
@@ -134,9 +134,9 @@ posts       Array of PFObject       An array that stores all those parking spots
             }
         }
     }
-  '''
+  ```
   - Set Release and update parking spot information to database:
-  '''swift
+  ```swift
        @IBAction func onRelease(_ sender: Any) {
         if(reserverd){
             selectedPost["availability"]=true
@@ -150,9 +150,9 @@ posts       Array of PFObject       An array that stores all those parking spots
         }
         
     }
- '''
+ ```
  - Set Reserve and update parking spot information to database:
- '''swift
+ ```swift
     @IBAction func onReserve(_ sender: Any) {
         if(!reserverd){
             selectedPost["availability"]=false
@@ -166,7 +166,7 @@ posts       Array of PFObject       An array that stores all those parking spots
             
         }
     }
-   '''
+   ```
    
    # GIF Walkthrough
    ### Sign Up
