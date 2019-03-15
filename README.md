@@ -116,11 +116,11 @@ posts       Array of PFObject       An array that stores all those parking spots
             }
         }
     }
- ```
-    
+    ```
+ 
  - Get parking spot information code:
- ```swift
-     override func viewDidAppear(_ animated: Bool) {
+    ```swift
+     @override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query=PFQuery(className: "parkingSpot")
         query.limit = 10
@@ -134,7 +134,7 @@ posts       Array of PFObject       An array that stores all those parking spots
             }
         }
     }
-  ```
+    ```
   - Set Release and update parking spot information to database:
   ```swift
        @IBAction func onRelease(_ sender: Any) {
